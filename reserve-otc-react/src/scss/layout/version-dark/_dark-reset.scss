@@ -1,0 +1,29 @@
+@import "./../../abstracts/variable";
+
+
+
+[data-theme-version="dark"] {
+  background: $d-bg;
+  color: $d-ctl;
+
+
+  h1,
+  h2{
+    color: $darktext !important;
+
+  }
+  a.link {
+    color: $d-ctd;
+  }
+  a.link:focus,
+  a.link:hover {
+    color: $info;
+  }
+
+  a {
+    &:hover {
+      color: $white;
+    }
+  }
+
+}

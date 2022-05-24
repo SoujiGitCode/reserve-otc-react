@@ -1,0 +1,48 @@
+
+.review-tab.nav-pills{
+	margin-bottom:0;
+	align-items: flex-end;
+	li{
+		display:inline-block;
+		
+		a.nav-link{
+			color: rgba($white,0.4);
+			background: transparent;
+			text-transform:capitalize;
+			box-shadow: none;
+			@include transitionMedium;
+			border-radius: 0;
+			font-weight: 400;
+			font-size: 18px;
+			padding: 15px 40px;
+			margin-right: 1px;
+			position:relative;
+			&:after{
+				position:absolute;
+				content:"";
+				@include transitionMedium;
+				height:5px;
+				width:0px;
+				background:$primary;
+				border-radius:5px;
+				left:50%;
+				transform:translatex(-50%);
+				bottom:-7px;
+			}
+			&.active{
+				&:after{
+					width:58px;
+				}
+				color:$white;
+				@include respond('laptop') {
+					font-size: 14px;
+					padding: 12px 15px;
+				}
+			}
+			@include respond('laptop') {
+				font-size: 14px;
+				padding: 10px 15px;
+			}
+		}
+	}
+}
