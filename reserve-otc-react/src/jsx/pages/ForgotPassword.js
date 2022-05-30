@@ -1,14 +1,10 @@
-import React, { useState } from 'react'
-import { connect, useDispatch } from 'react-redux';
+import React from 'react'
 import { Link } from 'react-router-dom'
-import { loadingToggleAction,loginAction,
-} from '../../store/actions/AuthActions';
+
 
 //
 //import logo from '../../images/logo-2.png'
-import logo from '../../images/okapagoText.png';
-import login from "../../images/bg-login2.png";
-import loginbg from "../../images/bg-login.jpg";
+import logo from '../../images/otc/rsv-otc-logo-sm.png';
 const ForgotPassword = ({ history }) => {
   const onSubmit = (e) => {
     e.preventDefault();

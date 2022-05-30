@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Row, Card, Col, Button, Modal, Container } from "react-bootstrap";
+import {Button, Modal } from "react-bootstrap";
 import axios from "axios";
 import swal from "sweetalert";
 import Loader from "react-spinners/ClipLoader";
@@ -96,7 +96,6 @@ const ReserveModal= () => {
   const [modalData, setModalData] = useState(true);
 
   //data variables
-  const [dataResult, setDataResult] = useState(false)
   const [responseData, setResponseData] = useState('')
 
   const [reserve, setReserve] = useState('')
@@ -112,8 +111,6 @@ const ReserveModal= () => {
   //adding account
   function modalVerify() {
     setModalData(false)
-    setDataResult(true)
-
     //console.dir(postData)
     saveRequest().then(r => console.log('ejecutado savedRequest'))
 
@@ -158,22 +155,19 @@ const ReserveModal= () => {
     resetData()
     //console.log(postData)
     setModalData(true)
-    setDataResult(false)
     setBasicModal(true)
   }
 
   function closeModal (){
     resetData()
     setModalData(true)
-    setDataResult(false)
     setBasicModal(false)
     setLoader(true)
   }
 
   //loader vars
   let [loader, setLoader] = useState(true);
-  let [color, setColor] = useState("#1a5a6e");
-
+  const color = "#1a5a6e"
 
   return (
       <div className="bootstrap-modal" >

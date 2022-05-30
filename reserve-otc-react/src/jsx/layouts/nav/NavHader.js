@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 /// images
-import logo from "../../../images/logo.png";
 import logoText from "../../../images/otc/rsv-otc-logo-sm-nobg.png";
 
 const NavHader = () => {

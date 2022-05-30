@@ -10,7 +10,7 @@ function LogoutPage(props){
 
    const  apiLogOut = async  ()=> {
        try{
-           const response = await axios.post('logout');
+            await axios.post('logout');
            //console.log('logout response:'+response)
        }catch (e) {//console.log('fail logout')
        }

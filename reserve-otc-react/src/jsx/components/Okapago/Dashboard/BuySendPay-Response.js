@@ -7,8 +7,7 @@ function BuySendPayResponse(props) {
     const [code, setCode] = useState('')
     const [rsv_code, setRsv_Code] = useState('')
     let [loader, setLoader] = useState(true);
-    let [color, setColor] = useState("#1a5a6e");
-
+  const color = "#1a5a6e"
     //console.dir(props)
     useEffect(() => {
         (

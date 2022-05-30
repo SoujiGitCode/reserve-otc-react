@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import { connect, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom'
 import {
-    loadingToggleAction, loginAction, logout,
+    loadingToggleAction, loginAction,
 } from '../../store/actions/AuthActions';
 
 import logo from '../../images/otc/rsv-otc-logo-lg-nobg.png'

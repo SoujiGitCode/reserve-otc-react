@@ -1,19 +1,9 @@
 import React from "react";
-import {useContext} from "react";
-
 import { Link } from "react-router-dom";
-
-
-import  ThemeContext  from "../../../context/ThemeContext";
-
-/// Scroll
-import PerfectScrollbar from "react-perfect-scrollbar";
-
 import LogoutPage from './Logout';
 /// Image
 
 import profileCustom from "../../../images/profile/profileCustom.png";
-import avatar from "../../../images/avatar/1.jpg";
 import { Dropdown } from "react-bootstrap";
 
 
@@ -97,7 +87,7 @@ const Header = ({ onNote, toggle, onProfile, onNotification, onClick }) => {
                                 
 							</Dropdown.Toggle>
 							<Dropdown.Menu align="right" className="mt-2">
-								<Link to="/app-profile" className="dropdown-item ai-icon" className={"allfinNone"}>
+								<Link to="/app-profile" className="dropdown-item ai-icon allfinNone" >
 									<svg
 										id="icon-user1"
 										xmlns="http://www.w3.org/2000/svg"
@@ -118,7 +108,7 @@ const Header = ({ onNote, toggle, onProfile, onNotification, onClick }) => {
 									<span className="ml-2">Perfil</span>
 								</Link>
 
-							  <Link to="/security" className="dropdown-item ai-icon" className={"allfinNone"}>
+							  <Link to="/security" className="dropdown-item ai-icon allfinNone" >
 							<i className="flaticon-381-unlocked-2"></i>
 								<span className="ml-2">Seguridad</span>
 							  </Link>

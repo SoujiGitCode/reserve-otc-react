@@ -1,7 +1,7 @@
-import React, {lazy, useState} from 'react'
+import React, { useState} from 'react'
 import { Link } from 'react-router-dom'
 import { connect, useDispatch } from 'react-redux';
-import logo from '../../images/logo-full.png'
+import logo from '../../images/otc/rsv-otc-logo-sm.png'
 import Loader from '../pages/Loader/Loader';
 import axios from'axios'
 import {Redirect} from "react-router-dom";
@@ -13,11 +13,11 @@ import {
 function Register(props) {
 
 
-    const Login = lazy(() => {
+   /* const Login = lazy(() => {
         return new Promise(resolve => {
             setTimeout(() => resolve(import('../../jsx/pages/Login')), 500);
         });
-    });
+    });*/
 
     let errorsObj = { email: '', password: '' };
     const [errors, setErrors] = useState(errorsObj);

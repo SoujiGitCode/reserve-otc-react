@@ -186,8 +186,7 @@ const EditReserve= (props) => {
 
     //loader vars
     let [loader, setLoader] = useState(true);
-    let [color, setColor] = useState("#1a5a6e");
-
+  const color = "#1a5a6e"
 
     return (
         <div className="bootstrap-modal" >

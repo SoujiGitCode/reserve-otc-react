@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { connect, useDispatch } from 'react-redux';
-import logo from '../../../images/logo-full.png'
+import logo from '../../../images/otc/rsv-otc-logo-sm.png'
 import Loader from '../../pages/Loader/Loader';
 import {
     loadingToggleAction,

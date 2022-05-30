@@ -1,9 +1,5 @@
-import React, {useState, Fragment, useEffect} from "react"
-import { Row, Card, Col, Button, Modal, Container } from "react-bootstrap"
-import axios from "axios"
-import swal from "sweetalert"
-import Loader from "react-spinners/ClipLoader"
-
+import React, {useState} from "react"
+import { Button, Modal } from "react-bootstrap"
 import BuySendPayData from "./BuySendPay-Data";
 import BuySendPayResponse from "./BuySendPay-Response";
 
@@ -13,12 +9,9 @@ const BuyTradeSendPay= (props) => {
     const [nextButton, setNextButton] = useState(true)
     //modal variables
     const [basicModal, setBasicModal] = useState(false);
-    const [modalData, setModalData] = useState(true);
     const [formStep, setFormStep] = useState(true)
     //data variables
-    const [dataResult, setDataResult] = useState(false)
 
-    const [reserve, setReserve] = useState('')
     const [reference, setReference] = useState('')
 
 
@@ -34,28 +27,18 @@ const BuyTradeSendPay= (props) => {
     }
 
     function openModal (){
-        setModalData(true)
-        setDataResult(false)
         setBasicModal(true)
         setReference('')
     }
 
     function closeModal (){
-        setModalData(true)
-        setDataResult(false)
         setBasicModal(false)
-        setLoader(true)
         setFormStep(true)
         setNextButton(true)
         setReference('')
         props.setReload(true)
 
     }
-
-    //loader vars
-    let [loader, setLoader] = useState(true);
-    let [color, setColor] = useState("#1a5a6e");
-
 
     return (
         <div className="bootstrap-modal" >

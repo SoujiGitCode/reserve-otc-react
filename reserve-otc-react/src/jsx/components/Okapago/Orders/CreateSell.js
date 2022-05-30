@@ -16,8 +16,7 @@ const SellRSV = () => {
 
     //loader vars
     let [loader, setLoader] = useState(true);
-    let [color, setColor] = useState("#1a5a6e");
-
+  const color = "#1a5a6e"
     //acceder a localstorage para obtener customerid
     const storedData = JSON.parse(localStorage.getItem('userDetails'))
     let customer_id = ''

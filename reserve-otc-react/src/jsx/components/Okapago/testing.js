@@ -1,10 +1,8 @@
-import React, {useEffect, useMemo, useState} from 'react'
+import React from 'react'
 import { useSpring, animated } from 'react-spring'
-import Wizard from "../Forms/Wizard/Wizard"
 
 export const Testing= () => {
 
-    const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 } })
 
     const styles = useSpring({
         loop: true,
